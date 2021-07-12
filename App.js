@@ -75,26 +75,17 @@
  function MyTabs2() {
    return (
      <Tab.Navigator
-        // activeColor="#00aea2"
-        // inactiveColor="#95a5a6"
-        barStyle={{ backgroundColor: 'black' }}
-        barStyle={{ backgroundColor: 'green' }}
-        screenOptions={{
-          tabBarOptions: {
-            style: {backgroundColor: 'red',},
-
-          },
-      }}
+       
       tabBarOptions={{
-        activeTintColor: '#fff',
+        activeTintColor: 'white',
         inactiveTintColor: 'black',
         activeBackgroundColor: 'black',
         style: {
-          backgroundColor: 'black',
+          // backgroundColor: 'red',
           paddingBottom: 3,
           paddingHorizontal:3
         },
-        inactiveBackgroundColor: 'black',
+        // inactiveBackgroundColor: 'black',
             style: {
                   backgroundColor: 'black',
                   paddingBottom: 3,
@@ -109,6 +100,16 @@
            tabBarLabel: 'Home',
            tabBarIcon: ({ color, size }) => (
              <Image style={styles.imagesStyle} source={Images.ic_home}></Image>
+           ),
+         }}
+       />
+        <Tab.Screen
+         name="Order"
+         component={Main}
+         options={{
+           tabBarLabel: 'Order',
+           tabBarIcon: ({ color, size }) => (
+             <Image style={styles.imagesStyleOrder} source={Images.ic_plus}></Image>
            ),
          }}
        />

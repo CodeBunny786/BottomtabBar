@@ -10,7 +10,7 @@ const images = {
   ic_home:require('../Images/Icons/home.png'),
   ic_profile:require('../Images/Icons/profile.png'),
   ic_profilenew:require('../Images/Icons/profilenew.png'),
-
+  ic_plus:require('../Images/Icons/plus.png'),
 
 };
 
